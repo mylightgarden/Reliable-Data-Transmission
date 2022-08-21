@@ -36,3 +36,7 @@ This repo includes a python application of a reliable data transmission on top o
 • Experience errors in transmission (failed checksum - data packets only)
 
 • Various combinations of the above
+
+
+### How to run: ###
+Simply run: **py rtd_main.py**
