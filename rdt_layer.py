@@ -1,4 +1,5 @@
 '''
+Author:  Sophie Zhao
 Sources used: TCP window size: https://www.youtube.com/watch?v=1zmaFD7Jb9c
 https://www.d.umn.edu/~gshute/net/reliable-data-transfer.xhtml#:~:text=For%20connection%2Doriented%20service%20provided,designed%20using%20some%20basic%20tools
 TCP Reliability, Flow Control, and Connection Management: https://www.youtube.com/watch?v=UYJP-6mhF6E
