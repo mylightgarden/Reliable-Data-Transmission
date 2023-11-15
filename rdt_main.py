@@ -1,20 +1,6 @@
 from rdt_layer import *
 from unreliable import UnreliableChannel
 
-# #################################################################################################################### #
-# Main                                                                                                                 #
-#                                                                                                                      #
-#                                                                                                                      #
-#                                                                                                                      #
-#                                                                                                                      #
-# #################################################################################################################### #
-
-# #################################################################################################################### #
-# The following are two sets of data input to the communication test. The first is small and the second is longer.     #
-# Start by uncomming the shorter until you feel you have a good algorithm. Then confirm it still works on a larger     #
-# scale by switching to the larger.                                                                                    #
-#                                                                                                                      #
-# #################################################################################################################### #
 
 #dataToSend = "The quick brown fox jumped over the lazy dog"
 
