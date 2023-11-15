@@ -1,21 +1,9 @@
 import random
 from functools import reduce
 
-
-# #################################################################################################################### #
-# Segment                                                                                                              #
-#                                                                                                                      #
-# Description:                                                                                                         #
-# The segment is a segment of data to be transferred on a communication channel.                                       #
-#                                                                                                                      #
-#                                                                                                                      #
-# Notes:                                                                                                               #
-# This file is not to be changed.                                                                                      #
-#                                                                                                                      #
-#                                                                                                                      #
-# #################################################################################################################### #
-
-
+# Segment                                                                                                                                                                                                                   #
+# The segment is a segment of data to be transferred on a communication channel.                                       
+ 
 class Segment():
 
     def __init__(self):
