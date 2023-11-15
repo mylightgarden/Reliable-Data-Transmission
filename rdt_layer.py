@@ -7,9 +7,7 @@ TCP Reliability, Flow Control, and Connection Management: https://www.youtube.co
 from segment import Segment
 import copy
 
-# RDTLayer                                                                                                             #
-#                                                                                                                      #
-# Description:                                                                                                         #
+# RDTLayer                                                                                                             #                                                                                                        #
 # The reliable data transfer (RDT) layer is used as a communication layer to resolve issues over an unreliable         #
 # channel.                                                                                                             #
 
@@ -28,8 +26,7 @@ class RDTLayer(object):
     lastSequenceNum = -1
     appendedSeqNum = []
     countSegmentTimeouts = 0
-
-    # __init__()                                                                                                       
+                                                                                                     
     def __init__(self):
         self.sendChannel = None
         self.receiveChannel = None
@@ -45,37 +42,31 @@ class RDTLayer(object):
         self.receivedNotDelivered = []
         self.seqnum = 0
         self.acknum = 0
-                                                                                    
-    # Description:                                                                                                     
+                                                                                                                                                                                     
     # Called by main to set the unreliable sending lower-layer channel
     def setSendChannel(self, channel):
         self.sendChannel = channel
-
-    # Description:                                                                                                    
+                                                                                                
     # Called by main to set the unreliable receiving lower-layer channel
     def setReceiveChannel(self, channel):
         self.receiveChannel = channel
-                                                                                                                 
-    # Description:                                                                                                     
+                                                                                                                                                                                                                  
     # Called by main to set the string data to send                                                                    
     def setDataToSend(self,data):
         self.dataToSend = data
-                                                                                                                 
-    # Description:                                                                                                     
+                                                                                                                                                                                                                    
     # Called by main to get the currently received and buffered string data, in order
     def getDataReceived(self):        
         # Identify the data that has been received...
         # print('getDataReceived(): Complete this...')
         return self.dataReceived
-    
-    # Description:                                                                                                     
+                                                                                                      
     # "timeslice". Called by main once per iteration
     def processData(self):
         self.currentIteration += 1
         self.processSend()
         self.processReceiveAndSendRespond()
-                                                                                                               
-    # Description:                                                                                                     
+                                                                                                                                                                                                                 
     # Manages Segment sending tasks
     def processSend(self): 
         # Go through the list of segments that have been sent by not yet acknowledged, and resend if timeout.
@@ -112,12 +103,8 @@ class RDTLayer(object):
                 #All data are sent
                 break
 
-
-    # processReceive()                                                                                                 #
-    #                                                                                                                  #
-    # Description:                                                                                                     #
-    # Manages Segment receive tasks                                                                                    #
-
+                                                                                             
+    # Manages Segment receive tasks  
     def processReceiveAndSendRespond(self):
         segmentAck = Segment()                  # Segment acknowledging packet(s) received
 
